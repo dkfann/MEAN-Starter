@@ -1,0 +1,80 @@
+<section class="row" data-ng-controller="AuthenticationController">
+
+	<div class="col-xs-offset-1 col-xs-10 col-md-offset-4 col-md-5 login-form-bg">
+		<h3 class="text-center">Sign Up</h3>
+		<form name="userForm" data-ng-submit="signup()" class="signin form-horizontal" novalidate autocomplete="off">
+			<fieldset>
+				<div class="form-group">
+					<div data-ng-show="error" class="text-center text-danger">
+						<div class="alert alert-danger">
+							<strong data-ng-bind="error"></strong>
+						</div>
+					</div>	
+				</div>
+				
+
+				<div class="form-group">
+					<div class="input-group input-group-lg">
+						<!-- <span class="input-group-addon">
+							<span class="glyphicon glyphicon-user"></span>
+						</span> -->
+						<label for="username">First Name</label>
+						<input type="text" id="firstName" name="firstName" class="form-control" data-ng-model="credentials.firstName" placeholder="First Name">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="input-group input-group-lg">
+						<!-- <span class="input-group-addon">
+							<span class="glyphicon glyphicon-user"></span>
+						</span> -->
+						<label for="username">Last Name</label>
+						<input type="text" id="lastName" name="lastName" class="form-control" data-ng-model="credentials.lastName" placeholder="Last Name">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="input-group input-group-lg">
+						<!-- <span class="input-group-addon">
+							<span class="glyphicon glyphicon-user"></span>
+						</span> -->
+						<label for="username">Email</label>
+						<input type="text" id="email" name="email" class="form-control" data-ng-model="credentials.email" placeholder="Email">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="input-group input-group-lg">
+						<!-- <span class="input-group-addon">
+							<span class="glyphicon glyphicon-user"></span>
+						</span> -->
+						<label for="username">Username</label>
+						<input type="text" id="username" name="username" class="form-control" data-ng-model="credentials.username" placeholder="Username">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="input-group input-group-lg">
+						<!-- <span class="input-group-addon">
+							<span class="glyphicon glyphicon-user"></span>
+						</span> -->
+						<label for="username">Password</label>
+						<input type="text" id="password" name="password" class="form-control" data-ng-model="credentials.password" placeholder="Username">
+					</div>
+				</div>
+				
+				</br>
+
+				<div class="text-center form-group">
+					<button type="submit" class="btn btn-success btn-block">Sign Up</button>
+				</div>
+				
+				<div class="text-center form-group">
+					Or&nbsp; <a href="/#!/signin" class="text-center show-signup">Sign In</a>
+				</div>
+				
+						
+			</fieldset>
+		</form>
+	</div>
+</section>
